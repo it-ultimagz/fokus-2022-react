@@ -5,7 +5,7 @@ const Inpus = () => {
   return (
     <Box overflowX="hidden">
       <Box
-        bgImage="url('/image/inpus/Inpus1.png')"
+        bgImage="url('/assets/image/inpus/Inpus1.png')"
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPos="center"
@@ -30,7 +30,7 @@ const Inpus = () => {
         </Flex>
       </Box>
       <Box
-        bgImage="url('/image/inpus/Inpus4.png')"
+        bgImage="url('/assets/image/inpus/Inpus4.png')"
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPos="center"
@@ -83,7 +83,7 @@ const Inpus = () => {
         </Flex>
       </Box>
       <Box
-        bgImage="url('/image/inpus/Inpus6.png')"
+        bgImage="url('/assets/image/inpus/Inpus6.png')"
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPos="center"
@@ -121,7 +121,7 @@ const Inpus = () => {
         </Flex>
       </Box>
       <Box
-        bgImage="url('/image/inpus/Inpus7.png')"
+        bgImage="url('/assets/image/inpus/Inpus7.png')"
         bgRepeat="no-repeat"
         bgSize="cover"
         bgPos="center"
