@@ -1,13 +1,65 @@
+:root {
+  --fokus-pink: #fd5ca7;
+  --fokus-yellow: #dffe58;
+  --fokus-blue: #3c3bd7;
+  --fokus-cream: #edeae1;
+  --fokus-red: #cd0024;
+  --fokus-black: #262626;
+  --fokus-grey: #cccccc;
+  --fokus-grey2: #aaa9a9;
+  --fokus-white: #ffffff;
+}
+
+@font-face {
+  font-family: "DTRandomDisplay";
+  src: url("../public/assets/fonts/DTRandomDisplay-Regular.otf")
+    format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../public/assets/fonts/National2-Regular.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../public/assets/fonts/National2-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../public/assets/fonts/National2-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "National2";
+  src: url("../public/assets/fonts/National2-XBold.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+html {
+  scroll-behavior: smooth;
 }
