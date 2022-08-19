@@ -2,14 +2,20 @@ import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { Box } from "@chakra-ui/react";
-const CustomComponent = motion(Box);
+let CustomComponent = motion(Box);
 
 export const AOS = (props) => {
   const controls = useAnimation();
   const [ref, inView] = useInView({
-    rootMargin: "0px 0px",
+    rootMargin: "0px",
     triggerOnce: props.triggerOnce,
+    threshold: props.threshold || 0.8,
   });
+
+  if (props.component) {
+    CustomComponent = motion(props.as);
+  }
+
   useEffect(() => {
     if (inView) {
       controls.start("enter");
@@ -26,8 +32,8 @@ export const AOS = (props) => {
       initial="exit"
       variants={props.variants}
       transition={{
-        type: "spring",
-        stiffness: 100,
+        type: props.linear ? "linear" : "spring",
+        stiffness: props.stiffness || 100,
         delay: props.delay || 0.2,
       }}
     >
