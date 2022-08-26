@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Heading, VStack, Text, Image } from "@chakra-ui/react";
 import { AOS } from "../components/AOS";
-import { fadeInUp, zoomIn } from "../shared/animation";
+import { fadeInUp, zoomIn, fade } from "../shared/animation";
 import { Section } from "../components/commons/Section";
 
 const S = (props) => {
@@ -14,18 +14,20 @@ const S = (props) => {
 
 const Rokok = () => {
   return (
-    <Box>
+    <Box
+    overflow="hidden">
       <Section
         data-key={1}
         pos="relative"
         color="var(--fokus-blue)"
         flexDir="column"
+        bgImage="assets/image/larangan-merokok/bg-1.png"
       >
         <VStack>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
             <Heading
               fontFamily="National2"
-              fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "8xl" }}
+              fontSize={{ base: "xl", md: "5xl", xl: "6xl", "2xl": "8xl" }}
               color="var(--fokus-yellow)"
             >
               DIL<S>E</S>M<S>A</S> R<S>O</S>
@@ -36,19 +38,21 @@ const Rokok = () => {
           <AOS variants={fadeInUp} delay={0.4} triggerOnce={true}>
             <Heading
               fontFamily="National2"
-              fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "8xl" }}
+              fontSize={{ base: "xl", md: "5xl", xl: "6xl", "2xl": "8xl" }}
               color="var(--fokus-yellow)"
             >
               IN<S>DO</S>NE<S>S</S>IA
             </Heading>
           </AOS>
           <Heading
+            fontWeight={600}
             fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
             color="var(--fokus-white)"
           >
             ATURAN TIDAK MENUTUP
           </Heading>
           <Heading
+            fontWeight={600}
             fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
             color="var(--fokus-white)"
           >
@@ -81,13 +85,18 @@ const Rokok = () => {
       </Section>
       <Section
         data-key={2}
-        bgImage="/assets/image/film/bg-blue.png"
-        color="var(--fokus-white)"
-        textAlign="center"
+        bgImage="/assets/image/larangan-merokok/bg-2.png"
+        color="var(--fokus-blue)"
+        h="100vh"
         fontFamily="National2"
         fontWeight="300"
       >
-        <Box>
+        <Box
+        width="50%"
+        textAlign="justify"
+        paddingRight={5}
+        >
+          <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
           <Text>
             Rokok dan konsumennya sering menjadi topik pembahasan yang tidak
             terpisahkan, terutama ketika kita membahas di Indonesia. Mengutip
@@ -98,22 +107,66 @@ const Rokok = () => {
             tembakau, dengan spesifikasi laki-laki 35,6 persen dan perempuan 3,5
             persen.
           </Text>
+          </AOS>
         </Box>
-        <Box>
-          <Text>
-            Rokok dan konsumennya sering menjadi topik pembahasan yang tidak
-            terpisahkan, terutama ketika kita membahas di Indonesia. Mengutip
-            tobaccofreekids.org, Indonesia merupakan pasar rokok terbesar kedua
-            di dunia berdasarkan volume ritel dengan konsumen pasar yang terdiri
-            dari orang dewasa (15 tahun ke atas) hingga anak muda (13-15 tahun).
-            Hal mengejutkan terlihat bahwa 19,2 persen anak muda menggunakan
-            tembakau, dengan spesifikasi laki-laki 35,6 persen dan perempuan 3,5
-            persen.
-          </Text>
+        <Box
+        width="50%"
+        textAlign="start"
+        paddingLeft={5}
+        >
+          <Flex
+          justifyContent="start"
+          alignItems="start"
+          paddingBottom="20px"
+          >
+            <Text
+            fontSize="7xl"
+            fontWeight={800}
+            lineHeight="65px"
+            
+            >19,2%</Text>
+            <Text
+            fontSize="xl"
+            fontWeight={800}
+            lineHeight="25px"
+            paddingLeft={5}
+            >ANAK MUDA <br /> MENGGUNAKAN <br /> TEMBAKAU</Text>
+          </Flex>
+          <Box
+          position="relative"
+          >
+            <Image
+            src="/assets/image/larangan-merokok/rokok.png"
+            width="250px"
+            ></Image>
+            <Image
+            src="/assets/image/larangan-merokok/asap.png"
+            position="absolute"
+            width="300px"
+            transform="translate(85%, -88%)"
+            top="0"
+            left="0"
+            >
+
+            </Image>
+          </Box>
         </Box>
       </Section>
-      <Section data-key={3}>
-        <Box bottom="5rem" textAlign="center" fontFamily="National2">
+      <Section 
+      data-key={3}
+      bgImage="/assets/image/larangan-merokok/bg-3.png"
+        color="var(--fokus-blue)"
+        fontFamily="National2"
+        fontWeight="300"
+        justifyContent="flex-end"
+      >
+        <Flex 
+        bottom="5rem" 
+        textAlign="center" 
+        fontSize="2xl"
+        fontWeight="500"
+        width="70%"
+        >
           <Text color="var(--fokus-white)">
             Bahkan dengan data tersebut, seluruh pihak mengetahui bagaimana
             pengaruh rokok terhadap kesehatan. Kampanye hingga penyuluhan bahaya
@@ -122,16 +175,24 @@ const Rokok = () => {
             peraturan tentang merokok yang ada di Indonesia adalah sebagai
             berikut.
           </Text>
-        </Box>
+        </Flex>
       </Section>
-      <Section data-key={4} bgColor="var(--fokus-cream)">
+      <Section 
+      data-key={4} 
+      bgColor="var(--fokus-cream)"
+      display="flex"
+      justifyContent="flex-start"
+        >
         <AOS
           fontFamily="National2"
-          pr="5rem"
-          w="50%"
+          py="6rem"
+
+          w="90%"
           variants={fadeInUp}
           delay={0.2}
           triggerOnce={true}
+          display="flex"
+          justifyContent="flex-start"
         >
           <VStack
             textAlign="left"
@@ -142,179 +203,251 @@ const Rokok = () => {
             <Heading
               color="var(--fokus-blue)"
               fontFamily="National2"
-              fontWeight="900"
+              fontWeight="700"
               fontSize="6xl"
               pos="relative"
             >
-              <Heading pos="absolute" left="-3.5rem" top="0.5rem">
-                <S>01</S>
-              </Heading>
-              Beautiful Boy
+              Peraturan <br />
+              Tentang Rokok <br />
+              di Indonesia
             </Heading>
-            <Text color="var(--fokus-black)">
-              “Beautiful Boy” merupakan film karya sutradara Felix Van
-              Groeningen yang rilis pada 2018. Premisnya berangkat dari kisah
-              nyata seorang anak bernama Nic Sheff (Timothée Chalamet) yang
-              kecanduan narkoba. Di sinilah peranan sang ayah, David Sheff
-              (Steve Carell) untuk membantu anaknya lepas dari belenggu
-              obat-obatan terlarang.{" "}
-            </Text>
-            <Text color="var(--fokus-black)">
-              Awal mulanya, film menampilkan kehidupan Nic yang cenderung
-              stabil. Nic merupakan seorang anak berprestasi dengan segudang
-              talenta serta memiliki pergaulan yang luas. Namun, di balik
-              seluruh kesempurnaannya, Nic justru diam-diam mengonsumsi heroin
-              dan methamphetamine. Dari sinilah titik kejatuhannya dimulai.{" "}
-            </Text>
-            <Text color="var(--fokus-black)">
-              Hidupnya mulai berantakan seiring dengan kondisi fisik dan psikis
-              yang kian menurun. Ayahnya yang mengetahui keadaan Nic tidak
-              tinggal diam. David terus menopang dan membimbing Nic untuk
-              kembali bangkit. Berbagai upaya dilakukan, mulai dari rehabilitasi
-              hingga mendekatkan kembali Nic dengan keluarga.{" "}
-            </Text>
-            <Text color="var(--fokus-grey2)" fontSize="sm">
-              (Foto: imbd.com) Salah satu adegan Nic Sheff dan ayahnya, David
-              Sheff pada film “Beautiful Boy”.
-            </Text>
+            <Flex>
+              <Box
+              width="10%"
+              >
+                <Text
+                fontSize="3xl"
+                textAlign="center"
+                fontWeight="600"
+                lineHeight="35px"
+                >
+                  01
+                </Text>
+              </Box>
+              <Box
+              width="40%"
+              textAlign="justify"
+              >
+                <Text>
+                  Merokok dilarang di kendaraan umum dan berbagai daerah umum seperti fasilitas kesehatan, tempat ibadah. dan fasilitas pendidikan. Area khusus untuk merokok perlu disediakan di daerah umum lainnya dan tempat kerja.
+                </Text>
+              </Box>
+
+              <Box
+              width="10%"
+              >
+                <Text
+                fontSize="3xl"
+                textAlign="center"
+                fontWeight="600"
+                lineHeight="35px"
+                >
+                  02
+                </Text>
+              </Box>
+              <Box
+              width="40%"
+              textAlign="justify"
+              >
+                <Text>
+                  Di televisi dan radio, iklan rokok boleh disiarkan antara pukul 21:30 hingga 05:00 waktu setempat. Iklan tersebut tidak diperbolehkan untuk menunjukkan wujud rokok, produk tembakau, serta gambar orang sedang merokok.
+                </Text>
+              </Box>
+              
+            </Flex>
+            <Flex>
+              <Box
+              width="10%"
+              >
+                <Text
+                fontSize="3xl"
+                textAlign="center"
+                fontWeight="600"
+                lineHeight="35px"
+                >
+                  03
+                </Text>
+              </Box>
+              <Box
+              width="40%"
+              textAlign="justify"
+              >
+                <Text>
+                  Penggunaan zat aditif dalam produk tembakau dilarang kecuali jika zat aditif tersebut telah terbukti secara ilmiah tidak membahayakan kesehatan.
+                </Text>
+              </Box>
+
+              <Box
+              width="10%"
+              >
+                <Text
+                fontSize="3xl"
+                textAlign="center"
+                fontWeight="600"
+                lineHeight="35px"
+                >
+                  04
+                </Text>
+              </Box>
+              <Box
+              width="40%"
+              textAlign="justify"
+              >
+                <Text>
+                  Penjualan produk tembakau menggunakan vending machine dilarang oleh Undang-Undang. Penjualan produk tembakau juga hanya diperbolehkan untuk orang berusia 18 tahun ke atas.
+                </Text>
+              </Box>
+              
+            </Flex>
           </VStack>
         </AOS>
-        <AOS w="50%" variants={zoomIn} delay={0.4} triggerOnce={true}>
-          <Image src="/assets/image/film/bb.png" />
-        </AOS>
+        
       </Section>
-      <Section data-key={5} bgImage="/assets/image/film/bg-blue-2.png">
+      <Section 
+      data-key={4}
+      bgImage="/assets/image/larangan-merokok/bg-5.png"
+        color="var(--fokus-blue)"
+        fontFamily="National2"
+        fontWeight="300"
+        justifyContent="flex-end"
+      >
+        <Box
+        bottom="5rem" 
+        textAlign="justify" 
+        fontSize="14px"
+
+        width="60%"
+        color="var(--fokus-yellow)"
+        >
+          <Text >
+            Meskipun berbagai peraturan telah ditetapkan, tetapi bisnis tembakau di Indonesia kian merajalela. Dilansir dari thejakartapost.com, perusahaan tembakau di Indonesia menghasilkan sebanyak 341 miliar batang rokok tahun 2017. Hal tersebut diperparah dengan promosi iklan rokok yang menargetkan anak muda di usia perkembangan kognitif awal. Mereka menggunakan pesan-pesan yang inspiratif dan manipulatif. Alhasil, tidak heran jika perokok muda di Indonesia banyak jumlahnya.
+          </Text>
+          <Text pt={8}>
+            Jika dibandingkan dengan negara tetangga seperti Malaysia dan Selandia Baru, keduanya mulai menerapkan peraturan yang sama. Selandia Baru akan melarang penjualan tembakau ke generasi berikutnya dalam upaya untuk akhirnya menghentikan kebiasaan merokok. Bagi yang lahir setelah 2008 tidak akan dapat membeli rokok atau produk tembakau seumur hidup mereka berdasarkan undang-undang yang diharapkan akan diberlakukan tahun depan. Selandia Baru bertekad untuk mencapai tujuan nasional mengurangi tingkat merokok menjadi 5 persen pada tahun 2025, dengan tujuan akhir menghilangkannya sama sekali.
+          </Text>
+        </Box>
+      </Section>
+      <Section data-key={6}  bgImage="/assets/image/larangan-merokok/bg-6.png">
         <AOS
           fontFamily="National2"
-          pr="5rem"
-          w="70%"
+          w="40%"
           variants={fadeInUp}
           delay={0.2}
           triggerOnce={true}
         >
           <VStack
-            textAlign="left"
-            alignItems="flex-start"
-            spacing="2rem"
-            fontWeight={300}
-          >
-            <Heading
-              fontFamily="National2"
-              fontWeight="900"
-              fontSize="6xl"
-              pos="relative"
-            >
-              <Heading pos="absolute" left="-3.5rem" top="0.5rem">
-                <S>02</S>
-              </Heading>
-              Slank Nggak Ada Matinya
-            </Heading>
-            <Text color="var(--fokus-white)">
-              Grup band bentukan Bimo Setiawan ini turut menjadi saksi kejamnya
-              kehidupan akibat NAPZA. Kisahnya diangkat menjadi film berjudul
-              “Slank Nggak Ada Matinya” yang rilis pada 2013.
-            </Text>
-            <Text color="var(--fokus-white)">
-              Berlatarkan tahun 1966, Slank berhasil meluncurkan album kelima
-              berjudul “Minoritas”. Peluncurannya dibarengi dengan mundurnya
-              personil Slank, salah satunya adalah Reynold. Dirinya mengaku
-              tidak kuasa dengan Bimo (Adipati Dolken), Akhadi Wira (Ricky
-              Harun), dan Ivanka (Aaron Ashab) yang terikat obat-obatan
-              terlarang. Akhirnya, posisi kosong dalam band diisi oleh Abdee
-              (Deva Mahenra) dan Ridho (Ajun Prawira).
-            </Text>
-            <Text color="var(--fokus-white)">
-              Selanjutnya, adegan menampilkan Slank yang sempat terancam bubar.
-              Namun, keinginan ini diurungkan melihat besarnya dukungan
-              penggemar, bahkan hingga muncul surat ancaman dari mereka.
-              Akhirnya Slank tetap melanjutkan perjalanannya. Pada 1977, Slank
-              berhasil merampungkan 30 konser. Hari berlalu, Slank terus
-              menjalankan konser meskipun sempat terhalang oleh berbagai
-              konflik. Para personil, terutama Bimo, Akhadi, dan Ivanka terus
-              mengonsumsi narkotika.
-            </Text>
-            <Text color="var(--fokus-white)">
-              Konflik terjadi ketika Ibu dari Bimo menemukan sebungkus narkotika
-              di ruangan studio. Teguran dilontarkan oleh Ibu Bimo. Namun,
-              sayangnya hal tersebut tidak diindahkan. Ketiga personil Slank itu
-              terus mengonsumsi narkotika hingga kerap mengalami sakau. Ibu Bimo
-              akhirnya membujuk Bimo dan kedua kawannya untuk menjalani
-              rehabilitasi.
-            </Text>
-            <Text color="var(--fokus-black)" fontSize="sm">
-              (Foto: slank.com) Salah satu adegan pada film “Slank Gak Ada
-              Matinya”.
-            </Text>
-          </VStack>
-        </AOS>
-        <AOS w="30%" variants={zoomIn} delay={0.2} triggerOnce={true}>
-          <Image src="/assets/image/film/sgm.png" />
-        </AOS>
-      </Section>
-      <Section data-key={6} bgColor="var(--fokus-cream)">
-        <AOS
-          fontFamily="National2"
-          pr="5rem"
-          w="70%"
-          variants={fadeInUp}
-          delay={0.2}
-          triggerOnce={true}
-        >
-          <VStack
-            textAlign="left"
-            alignItems="flex-start"
+          paddingTop="40px"
+            textAlign="justify"
             spacing="2rem"
             fontWeight={300}
             color="var(--fokus-black)"
+            fontSize="sm"
           >
-            <Heading
-              fontFamily="National2"
-              fontWeight="900"
-              fontSize="6xl"
-              pos="relative"
-              color="var(--fokus-blue)"
-            >
-              <Heading pos="absolute" left="-3.5rem" top="0.5rem">
-                <S>03</S>
-              </Heading>
-              Jakarta vs Everybody
-            </Heading>
             <Text>
-              Berbeda dengan dua kisah sebelumnya, “Jakarta vs Everybody”
-              merupakan sebuah film yang menggambarkan kehidupan pengedar
-              narkoba. Karya sutradara Ertanto Robby Soediskam ini rilis pada
-              2021 silam. Film ini dapat disaksikan pada platform Bioskop Online
-              mulai 19 Maret 2022. Namun, waktu penayangannya terbatas
+            Malaysia juga akan memperkenalkan undang-undang baru untuk melarang
+            merokok dan kepemilikan produk tembakau, termasuk alat penguap
+            elektronik, bagi orang yang lahir setelah 2005 sebagai "Permainan Akhir
+            Generasi" untuk merokok di negara tersebut.
             </Text>
             <Text>
-              Berlatarkan kehidupan di ibukota seperti judulnya, Don (Jefri
-              Nichol) merantau untuk meraih impiannya sebagai aktor. Di Jakarta,
-              Don harus menghadapi sulitnya kehidupan. Penghasilannya sebagai
-              aktor junior tidak mencukupi kebutuhan hidupnya. Karirnya di dunia
-              perfilman tak semulus bayangan.
+            Untuk mengikuti larangan membeli rokok yang diterapkan di Malaysia dan
+            Selandia Baru, Indonesia tidak bisa langsung meniru begitu saja. Dilansir
+            dari health.detik.com, Ketua Yayasan Lembaga Konsumen Indonesia
+            (YLKI), Tulus Abadi mengatakan Indonesia perlu menerapkan kebijakan
+            secara bertahap sebelum menerapkan aturan yang sama.
             </Text>
             <Text>
-              Alhasil, Don terpaksa terjun menjadi seorang pengedar narkotika.
-              Naik turunnya kehidupan ia lewati dengan pelik. Namun, penghasilan
-              yang didapat tak sebanding dengan hasil jerih lelahnya. Don juga
-              harus menghadapi berbagai rintangan yang menggoyahkan mimpinya
-              sebagai aktor.
-            </Text>
-            <Text>
-              “Jakarta vs Everybody” menengok kehidupan dari kacamata pahitnya
-              dunia, terlebih lagi hidup di Ibu Kota. Realitanya, manusia kerap
-              diperhadapkan oleh berbagai arus yang hendak dipilih, entah baik
-              ataupun buruk. Hal terpenting adalah tahu batasan diri.
-            </Text>
-            <Text color="var(--fokus-grey2)" fontSize="sm">
-              (Foto: parapuan.co) Salah satu adegan Jefri Nichol pada film
-              “Jakarta vs Everybody.”
+            Tulus mengatakan bahwa sebelum menerapkan larangan tersebut,
+            Selandia Baru sebelumnya sudah menerapkan beberapa kebijakan seperti
+            menjual rokok dengan harga mahal, meniadakan iklan rokok, dan
+            melarang penjualan rokok ketengan. Kebijakan semacam itu belum ada di
+            Indonesia sehingga akan sulit jika ingin menerapkan larangan pembelian rokok
+            yang sama.
             </Text>
           </VStack>
         </AOS>
-        <AOS w="30%" variants={zoomIn} delay={0.2} triggerOnce={true}>
-          <Image src="/assets/image/film/jktvs.png" />
-        </AOS>
+        <Box w="60%"
+        position="relative"
+        >
+          <AOS
+          w="550px"
+          left="50%"
+          position="absolute"
+          variants={fade}
+          delay={0.4}
+          triggerOnce={true}
+          >
+            <Image
+            src="/assets/image/larangan-merokok/5-1.png"
+            width="100%"
+            transform="translate(-20%, -60%) rotate(7deg)"
+            ></Image>
+          </AOS>
+          <AOS
+          w="250px"
+          left="50%"
+          position="absolute"
+          
+          variants={fadeInUp}
+          delay={0.8}
+          triggerOnce={true}
+          >
+            <Image
+            src="/assets/image/larangan-merokok/5-2.png"
+            width="100%"
+            transform="translate(-60%, -16%)"
+            ></Image>
+          </AOS>
+          <AOS
+          w="300px"
+          left="50%"
+          position="absolute"
+          
+          variants={fadeInUp}
+          delay={1}
+          triggerOnce={true}
+          >
+            <Image
+            transform="translate(20%, -23%);"
+            src="/assets/image/larangan-merokok/5-3.png"
+            width="100%"
+            ></Image>
+          </AOS>
+        </Box>
+      </Section>
+      <Section
+      data-key={7}  bgImage="/assets/image/larangan-merokok/bg-7.png"
+      >
+
+      </Section>
+
+      <Section
+      data-key={8}  bgImage="/assets/image/larangan-merokok/bg-8.JPG"
+      alignItems="flex-end"
+      justifyContent="center"
+      >
+        <AOS
+        display="flex"
+        variants={fadeInUp}
+        delay={0.8}
+        triggerOnce={true}
+        height="100%"
+        width="100%"
+        >
+          <Text
+          textAlign="justify"
+          fontSize="md"
+          fontWeight={600}
+          color="white"
+          >
+          Butuh ketegasan dari pemerintah untuk membuat aturan yang lebih jelas dan tegas
+          untuk mengurangi jumlah perokok yang tinggi. Dengan begitu, masyarakat akan
+          memahami konsekuensinya dan tidak mencoba untuk melanggar aturan tersebut.
+          Selain itu, butuh kesadaran seluruh kalangan masyarakat bahwa rokok bukan
+          sekadar gaya hidup, melainkan kegiatan berbahaya bagi kesehatan bersama.
+          </Text>
+
+        </AOS> 
       </Section>
     </Box>
   );
