@@ -44,20 +44,22 @@ const Rokok = () => {
               IN<S>DO</S>NE<S>S</S>IA
             </Heading>
           </AOS>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
-            color="var(--fokus-white)"
-          >
-            ATURAN TIDAK MENUTUP
-          </Heading>
-          <Heading
-            fontWeight={600}
-            fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
-            color="var(--fokus-white)"
-          >
-            KEMUNGKINAN MENGGUNAKAN
-          </Heading>
+          <AOS textAlign="center" variants={fadeInUp} delay={0.2} triggerOnce={true}>
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
+              color="var(--fokus-white)"
+            >
+              ATURAN TIDAK MENUTUP
+            </Heading>
+            <Heading
+              fontWeight={600}
+              fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }}
+              color="var(--fokus-white)"
+            >
+              KEMUNGKINAN MENGGUNAKAN
+            </Heading>
+          </AOS>
         </VStack>
         <AOS
           triggerOnce={true}
@@ -109,7 +111,7 @@ const Rokok = () => {
           </Text>
           </AOS>
         </Box>
-        <Box
+        <AOS variants={fadeInUp} delay={0.6} triggerOnce={true}
         width="50%"
         textAlign="start"
         paddingLeft={5}
@@ -150,7 +152,7 @@ const Rokok = () => {
 
             </Image>
           </Box>
-        </Box>
+        </AOS >
       </Section>
       <Section 
       data-key={3}
@@ -160,7 +162,8 @@ const Rokok = () => {
         fontWeight="300"
         justifyContent="flex-end"
       >
-        <Flex 
+        <AOS variants={zoomIn} delay={0.3} triggerOnce={true}
+        display="flex"
         bottom="5rem" 
         textAlign="center" 
         fontSize="2xl"
@@ -175,7 +178,7 @@ const Rokok = () => {
             peraturan tentang merokok yang ada di Indonesia adalah sebagai
             berikut.
           </Text>
-        </Flex>
+        </AOS>
       </Section>
       <Section 
       data-key={4} 
