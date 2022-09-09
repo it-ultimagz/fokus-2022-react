@@ -1,9 +1,10 @@
 import React from "react";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, useLocation } from "react-router-dom";
 import { Film, Inpus, Rokok, RelasiNarkoba, Pengantar, Landing } from "./pages";
 import { Box, Button, HStack } from "@chakra-ui/react";
 import { IoIosArrowUp } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
+import { AnimatePresence } from "framer-motion";
 
 const NavButton = (props) => {
   return (
@@ -41,13 +42,13 @@ const RoutesArray = [
     element: <RelasiNarkoba />,
   },
   {
-    path: "/landing",
+    path: "/",
     title: "Landing",
     element: <Pengantar />,
   },
   {
-    path: "/landing-2",
-    title: "Landing",
+    path: "/fokus-2022",
+    title: "Home Fokus 2022",
     element: <Landing />,
   },
 ];
@@ -56,6 +57,8 @@ const AppRouter = () => {
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
+
+  const location = useLocation();
 
   return (
     <Box>
@@ -67,36 +70,16 @@ const AppRouter = () => {
           Beranda
         </NavButton>
       </Link>
-      <NavButton
-        pos="fixed"
-        bottom="3rem"
-        right="3rem"
-        zIndex={10}
-        boxSize="3rem"
-        fontSize="1.5rem"
-        p="0"
-        borderRadius="50%"
-        onClick={scrollToTop}
-      >
+      <NavButton pos="fixed" bottom="3rem" right="3rem" zIndex={10} boxSize="3rem" fontSize="1.5rem" p="0" borderRadius="50%" onClick={scrollToTop}>
         <IoIosArrowUp />
       </NavButton>
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <HStack>
-              {RoutesArray.map((item, index) => (
-                <Link to={item.path}>
-                  <NavButton>{item.title}</NavButton>
-                </Link>
-              ))}
-            </HStack>
-          }
-        />
-        {RoutesArray.map((item, index) => (
-          <Route path={item.path} element={item.element} key={index} />
-        ))}
-      </Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes location={location} key={location.pathname}>
+          {RoutesArray.map((item, index) => (
+            <Route path={item.path} element={item.element} key={index} />
+          ))}
+        </Routes>
+      </AnimatePresence>
     </Box>
   );
 };
