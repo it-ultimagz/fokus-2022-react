@@ -1,0 +1,36 @@
+.blue-circle {
+    transition: 0.5s;
+}
+
+.blue-circle:hover {
+    transition: 0.5s;
+    background-color: #2D2A94;
+    cursor: pointer;
+}
+
+.blue-circle:hover .arrow-circle{
+    animation-name: updown;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.one-overlay {
+    opacity: 0;
+    transition: 0.5s;
+    box-shadow: -8px 8px 0px 0px rgba(0,0,0,0.46);
+-webkit-box-shadow: -8px 8px 0px 0px rgba(0,0,0,0.46);
+-moz-box-shadow: -8px 8px 0px 0px rgba(0,0,0,0.46);
+}
+
+.one-overlay:hover {
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+@keyframes updown {
+    0%   {top:25%;}
+    50%  {top:40%;}
+    100% {top:25%;}
+}
