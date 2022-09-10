@@ -1,7 +1,7 @@
 import React from "react";
 import { Section } from "../components/commons/Section";
 import { AOS } from "../components/AOS";
-import { Box, VStack, Heading, Text, Flex } from "@chakra-ui/react";
+import { Box, VStack, Heading, Text, Flex, Image } from "@chakra-ui/react";
 import { fadeInUp } from "../shared/animation";
 
 const S = (props) => {
@@ -11,8 +11,12 @@ const S = (props) => {
 const Fenomena = () => {
   return (
     <Box>
-      <Section data-key={1} bgColor="var(--fokus-blue)" pos="relative" color="white" flexDir="column">
-        <VStack>
+      <Section data-key={1} bgColor="var(--fokus-blue)" pos="relative" color="white" flexDir="column" overflowX="hidden">
+          <Image pos="absolute" left="5vw" top="-13vw" src="/assets/image/fenomena-napza/Asset-31.png" maxW="28vw" />
+          <Image pos="absolute" right="5vw" top="-13vw" src="/assets/image/fenomena-napza/Asset-29.png" maxW="30vw" />
+          <Image pos="absolute" left="-13vw" bottom="2vw" src="/assets/image/fenomena-napza/Asset-30.png" maxW="30vw" />
+          <Image pos="absolute" right="-10vw" bottom="0" src="/assets/image/fenomena-napza/Asset-32.png" maxW="38vw" />
+        <VStack zIndex={2}>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
             <Heading fontFamily="National2" fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "7xl" }}>
               SISI G<S>E</S>L<S>A</S>P DARI N<S>A</S>PZ<S>A</S>
@@ -45,8 +49,35 @@ const Fenomena = () => {
           </Text>
         </AOS>
       </Section>
-      <Section data-key={1} bgColor="var(--fokus-yellow)" pos="relative" color="white" flexDir="column"></Section>
-      <Section data-key={1} bgColor="var(--fokus-blue)" pos="relative" color="white" flexDir="column"></Section>
+      <Section overflowX="hidden" overflowY="hidden" maxH="100vh" data-key={1} bgColor="var(--fokus-yellow)" pos="relative" color="white" flexDir="column">
+        <Image src="/assets/image/fenomena-napza/Asset-12.png" minW="110vw" />
+        <Text pos="absolute" textAlign="justify" fontWeight="500" left="45vw" top="3vw" maxW="40vw" color="var(--fokus-blue)">
+              Fenomena penggunaan NAPZA oleh anak-anak di bawah umur bukan lagi<br/>
+              kejadian mengejutkan. Hal ini pun kerap menjadi topik pemberitaan<br/>
+              pada media massa. Dampak penyalahgunaan obat-obatan terlarang dan<br/>
+              zat psikotropika dalam jangka panjang juga mengancam kesehatan<br/>
+              mahasiswa dan pelajar. 
+        </Text>
+      </Section>
+      <Section maxH="100vh" overflowX="hidden" overflowY="hidden" data-key={1} bgColor="var(--fokus-blue)" pos="relative" color="white" flexDir="column">
+        <Flex>
+          <Text textAlign="justify" color="var(--fokus-yellow)" my="auto" >
+            Melansir laman bnn.go.id, tercatat sekitar 269 juta orang di dunia yang
+            menyalahgunakan narkoba dalam World Drug Report UNODC 2020.
+            Jumlah ini dapat dipersempit menurut data dari Dewan Pengurus Pusat
+            Aliansi Relawan Perguruan Tinggi Anti Penyalahgunaan Narkoba (DPP
+            Artipena) pada 2021. Data tersebut menyatakan bahwa 27 persen
+            pengguna NAPZA di Indonesia merupakan mahasiswa dan pelajar.
+            <br/><br/>
+            Persebaran NAPZA sejak beberapa tahun silam di lingkungan anak-anak
+            memang kerap membuat orang dewasa waswas. Hal ini dikarenakan
+            barang terlarang tersebut dikemas dalam bentuk permen, bubuk asam
+            manis, minuman, dan beberapa makanan yang mudah menarik
+            perhatian anak.
+          </Text>
+          <Image src="/assets/image/fenomena-napza/Asset-33.png" maxW="55vw" me="-18vw" />
+        </Flex>
+      </Section>
       <Section data-key={1} bgImage="/assets/image/fenomena-napza/foto-obat.jpg" pos="relative" color="white" flexDir="column"></Section>
       <Section data-key={1} bgColor="var(--fokus-yellow)" pos="relative" color="white" flexDir="column"></Section>
       <Section data-key={1} bgColor="var(--fokus-yellow)" pos="relative" color="white" flexDir="column"></Section>
