@@ -26,6 +26,19 @@
     opacity: 1;
     transition: 0.5s;
     cursor: pointer;
+    animation: neon 5s infinite;
+
+}
+
+.text-overlay{
+    opacity: 0;
+}
+
+.one-overlay:hover  .text-overlay{
+    opacity: 1;
+    transition: 0.5s;
+    cursor: pointer;
+    animation: neon 5s infinite;
 }
 
 
@@ -33,4 +46,18 @@
     0%   {top:25%;}
     50%  {top:40%;}
     100% {top:25%;}
+}
+
+@keyframes neon {
+    0%,  50%,  100% {
+        text-shadow: 
+            #EFFD6D 0 0 2px,
+            #EFFD6D 0 0 4px,
+            #EFFD6D 0 0 6px;
+
+        ;
+    }
+    25%,  75% {
+        text-shadow: none;
+    }
 }

@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { Box, Image, Text } from "@chakra-ui/react";
 import React from "react";
 import { Section } from "../components/commons/Section";
 import { AOS } from "../components/AOS";
@@ -45,9 +45,23 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+            >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              >
+                INPUS
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -63,7 +77,8 @@ const Landing = () => {
 
           <Image src="/assets/image/landing/1-2.png" width="130px" position="absolute" top="50%" left="50%" transform="translate(135%, -80%)" />
 
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(135%, -80%)" zIndex={3} />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(190%, -230%)" zIndex={3} />
+          
         </Box>
       </AOS>
 
@@ -81,9 +96,23 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+              >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              >
+                NARKOBA
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -96,6 +125,8 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             src="/assets/image/landing/2.png"
           />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-120%, -230%)" zIndex={3} />
+
         </Box>
       </AOS>
 
@@ -113,9 +144,23 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+              >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              >
+                ROKOK
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -128,6 +173,8 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             src="/assets/image/landing/3.png"
           />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-210%, -230%)" zIndex={3} />
+
         </Box>
       </AOS>
 
@@ -145,9 +192,23 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+              >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              >
+                NAPZA
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -160,6 +221,8 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             src="/assets/image/landing/4.png"
           />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(100%, -300%)" zIndex={3} />
+
         </Box>
       </AOS>
 
@@ -177,9 +240,25 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+              >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              textAlign="center"
+              lineHeight="50px"
+              >
+                CHIT CHAT
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -192,7 +271,9 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             src="/assets/image/landing/5.png"
           />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(280%, -290%)" zIndex={3} />
         </Box>
+        
       </AOS>
 
       {/* section 6 */}
@@ -209,9 +290,23 @@ const Landing = () => {
               left="50%"
               transform="translate(-50%, -50%)"
               bgColor="var(--fokus-blue)"
-              zIndex={2}
+              zIndex={4}
               opacit="0"
-            />
+              >
+              <Text
+              className="text-overlay"
+              position="absolute"
+              top="50%" 
+              left="50%" 
+              transform="translate(-50%, -50%)" 
+              zIndex={5}
+              fontFamily="National2"
+              fontSize={{ xl: "5xl", lg: "6xl" }}
+              color="var(--fokus-yellow)"
+              >
+                FILM
+              </Text>
+            </Box>
           </Link>
 
           <Image
@@ -224,6 +319,27 @@ const Landing = () => {
             transform="translate(-50%, -50%)"
             src="/assets/image/landing/6.png"
           />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(110%, -60%)" zIndex={3} />
+        </Box>
+        
+
+      </AOS>
+
+      {/* section 7 */}
+      <AOS variants={fade} triggerOnce={true} delay={1.4}>
+        <Box position="absolute" width="170px" height="400px" top="30vh" left="70vh">
+          <Image
+            zIndex={1}
+            width="100%"
+            maxWidth="none"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-50%, -50%)"
+            src="/assets/image/landing/7.png"
+          />
+          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-45%, -140%)" zIndex={3} />
+
         </Box>
       </AOS>
     </Section>
