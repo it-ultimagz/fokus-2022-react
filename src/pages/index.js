@@ -4,5 +4,4 @@ export { default as Rokok } from "./Rokok";
 export { default as RelasiNarkoba } from "./RelasiNarkoba";
 export { default as Pengantar } from "./Pengantar";
 export { default as Landing } from "./Landing";
-
-
+export { default as Fenomena } from "./Fenomena";

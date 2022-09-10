@@ -1,6 +1,6 @@
 import React from "react";
 import { Routes, Route, Link, useLocation } from "react-router-dom";
-import { Film, Inpus, Rokok, RelasiNarkoba, Pengantar, Landing } from "./pages";
+import { Film, Inpus, Rokok, RelasiNarkoba, Pengantar, Landing, Fenomena } from "./pages";
 import { Box, Button, HStack } from "@chakra-ui/react";
 import { IoIosArrowUp } from "react-icons/io";
 import { AiFillHome } from "react-icons/ai";
@@ -40,6 +40,11 @@ const RoutesArray = [
     path: "/relasi-narkoba-dan-ketenaran",
     title: "Relasi Narkoba dan Ketenaran",
     element: <RelasiNarkoba />,
+  },
+  {
+    path: "/fenomena-konsumsi-napza",
+    title: "Fenomena Konsumsi NAPZA di bawah umur",
+    element: <Fenomena />,
   },
   {
     path: "/",
