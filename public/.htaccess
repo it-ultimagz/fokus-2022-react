@@ -1,9 +1,4 @@
 <IfModule mod_rewrite.c>
-  RewriteEngine On
-  RewriteBase /articles/react-test/
-  RewriteRule ^index\.html$ - [L]
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteCond %{REQUEST_FILENAME} !-l
-  RewriteRule . /articles/react-test/index.html [L]
+  RewriteEngine On RewriteBase /articles/napza/ RewriteRule ^index\.html$ - [L] RewriteCond %{REQUEST_FILENAME} !-f RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{REQUEST_FILENAME} !-l RewriteRule . /articles/napza/index.html [L]
 </IfModule>

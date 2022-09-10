@@ -49,15 +49,15 @@ const Landing = () => {
               opacit="0"
             >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
               >
                 INPUS
               </Text>
@@ -78,7 +78,6 @@ const Landing = () => {
           <Image src="/assets/image/landing/1-2.png" width="130px" position="absolute" top="50%" left="50%" transform="translate(135%, -80%)" />
 
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(190%, -230%)" zIndex={3} />
-          
         </Box>
       </AOS>
 
@@ -98,17 +97,17 @@ const Landing = () => {
               bgColor="var(--fokus-blue)"
               zIndex={4}
               opacit="0"
-              >
+            >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
               >
                 NARKOBA
               </Text>
@@ -126,7 +125,6 @@ const Landing = () => {
             src="/assets/image/landing/2.png"
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-120%, -230%)" zIndex={3} />
-
         </Box>
       </AOS>
 
@@ -146,17 +144,17 @@ const Landing = () => {
               bgColor="var(--fokus-blue)"
               zIndex={4}
               opacit="0"
-              >
+            >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
               >
                 ROKOK
               </Text>
@@ -174,14 +172,13 @@ const Landing = () => {
             src="/assets/image/landing/3.png"
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-210%, -230%)" zIndex={3} />
-
         </Box>
       </AOS>
 
       {/* section 4 */}
       <AOS variants={fade} triggerOnce={true} delay={0.8}>
         <Box position="absolute" width="420px" height="400px" top="50vh" left="130vh">
-          <Link to="/">
+          <Link to="/fenomena-konsumsi-napza">
             <Box
               className="one-overlay"
               width="400px"
@@ -194,17 +191,17 @@ const Landing = () => {
               bgColor="var(--fokus-blue)"
               zIndex={4}
               opacit="0"
-              >
+            >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
               >
                 NAPZA
               </Text>
@@ -222,7 +219,6 @@ const Landing = () => {
             src="/assets/image/landing/4.png"
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(100%, -300%)" zIndex={3} />
-
         </Box>
       </AOS>
 
@@ -242,19 +238,19 @@ const Landing = () => {
               bgColor="var(--fokus-blue)"
               zIndex={4}
               opacit="0"
-              >
+            >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
-              textAlign="center"
-              lineHeight="50px"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
+                textAlign="center"
+                lineHeight="50px"
               >
                 CHIT CHAT
               </Text>
@@ -273,7 +269,6 @@ const Landing = () => {
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(280%, -290%)" zIndex={3} />
         </Box>
-        
       </AOS>
 
       {/* section 6 */}
@@ -292,17 +287,17 @@ const Landing = () => {
               bgColor="var(--fokus-blue)"
               zIndex={4}
               opacit="0"
-              >
+            >
               <Text
-              className="text-overlay"
-              position="absolute"
-              top="50%" 
-              left="50%" 
-              transform="translate(-50%, -50%)" 
-              zIndex={5}
-              fontFamily="National2"
-              fontSize={{ xl: "5xl", lg: "6xl" }}
-              color="var(--fokus-yellow)"
+                className="text-overlay"
+                position="absolute"
+                top="50%"
+                left="50%"
+                transform="translate(-50%, -50%)"
+                zIndex={5}
+                fontFamily="National2"
+                fontSize={{ xl: "5xl", lg: "6xl" }}
+                color="var(--fokus-yellow)"
               >
                 FILM
               </Text>
@@ -321,8 +316,6 @@ const Landing = () => {
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(110%, -60%)" zIndex={3} />
         </Box>
-        
-
       </AOS>
 
       {/* section 7 */}
@@ -339,7 +332,6 @@ const Landing = () => {
             src="/assets/image/landing/7.png"
           />
           <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-45%, -140%)" zIndex={3} />
-
         </Box>
       </AOS>
     </Section>
