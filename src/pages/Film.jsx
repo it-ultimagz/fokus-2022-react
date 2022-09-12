@@ -66,7 +66,7 @@ const Film = () => {
           </AOS>
         </VStack>
       </Section>
-      <Section data-key={3} bgImage="./assets/image/film/laptop-slank.jpg" pos="relative">
+      <Section data-key={3} bgImage="/articles/napza/assets/image/film/laptop-slank.jpg" pos="relative">
         <Box pos="absolute" bottom="2rem" bgColor="var(--fokus-yellow)" w="100%" textAlign="center" py="1rem" fontFamily="National2">
           <Text color="var(--fokus-blue)">
             Jakarta vs Everybody (2020), Beautiful Boy (2018), dan Slank Gak Ada Matinya (2013) merupakan beberapa film yang mengangkat isu tentang NAPZA.
@@ -104,7 +104,7 @@ const Film = () => {
           </VStack>
         </AOS>
         <AOS w="50%" variants={zoomIn} delay={0.4} triggerOnce={true}>
-          <Image src="/articles/napza/assets/image/film/bb.png" />
+          <Image src="/articles/napza/assets/image/film/bb.PNG" />
         </AOS>
       </Section>
       <Section data-key={5} bgImage="/articles/napza/assets/image/film/bg-blue-2.png">
@@ -142,7 +142,7 @@ const Film = () => {
           </VStack>
         </AOS>
         <AOS w="30%" variants={zoomIn} delay={0.2} triggerOnce={true}>
-          <Image src="/articles/napza/assets/image/film/sgm.png" />
+          <Image src="/articles/napza/assets/image/film/sgm.PNG" />
         </AOS>
       </Section>
       <Section data-key={6} bgColor="var(--fokus-cream)">
@@ -178,7 +178,7 @@ const Film = () => {
           </VStack>
         </AOS>
         <AOS w="30%" variants={zoomIn} delay={0.2} triggerOnce={true}>
-          <Image src="/articles/napza/assets/image/film/jktvs.png" />
+          <Image src="/articles/napza/assets/image/film/jktvs.PNG" />
         </AOS>
       </Section>
     </Box>

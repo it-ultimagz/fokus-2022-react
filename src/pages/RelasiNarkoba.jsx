@@ -10,7 +10,7 @@ const S = (props) => {
 
 const RelasiNarkoba = () => {
   return (
-    <Box overflowX="hidden">
+    <Box overflow="hidden">
       <Section
         data-key={1}
         bgImage="/articles/napza/assets/image/relasi-narkoba/bg-1.png"
@@ -29,7 +29,7 @@ const RelasiNarkoba = () => {
         <AOS pos="absolute" top="40%" right="20%" variants={zoomInRotate} triggerOnce={true} delay={0.8}>
           <Image src="/articles/napza/assets/image/relasi-narkoba/asset-1.png" w="300px" />
         </AOS>
-        <VStack alignItems="flex-start">
+        <VStack alignItems="flex-start" zIndex={1}>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
             <Heading fontFamily="National2" fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "7xl" }}>
               PANDANGAN
@@ -79,7 +79,7 @@ const RelasiNarkoba = () => {
         <AOS pos="absolute" top="35%" left="30%" variants={zoomIn} triggerOnce={true} delay={1.2}>
           <Image src="/articles/napza/assets/image/relasi-narkoba/asset-2.png" w="300px" />
         </AOS>
-        <VStack spacing="2.5rem" pl="50%">
+        <VStack spacing="2.5rem" pl="50%" zIndex={1}>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
             <Text fontFamily="National2" fontSize="xl">
               Penyalahgunaan narkotika, psikotropika, dan obat terlarang (narkoba) bukan hanya terjadi di kalangan masyarakat umum, melainkan banyak artis
@@ -331,10 +331,10 @@ const RelasiNarkoba = () => {
             </GridItem>
           </AOS>
           <GridItem pos="relative" h="100%">
-            <AOS variants={fadeInUp} delay={0.8} triggerOnce={true} pos="absolute" top="0" left="0" h="55%">
+            <AOS variants={fadeInUp} delay={0.8} triggerOnce={true} pos="absolute" top="0" left="0" h="45%">
               <Image src="/articles/napza/assets/image/relasi-narkoba/asset-9.png" h="100%" />
             </AOS>
-            <AOS variants={fadeInUp} delay={1} triggerOnce={true} pos="absolute" bottom="0" right="0" h="55%">
+            <AOS variants={fadeInUp} delay={1} triggerOnce={true} pos="absolute" bottom="0" right="0" h="45%">
               <Image src="/articles/napza/assets/image/relasi-narkoba/asset-8.png" h="100%" />
             </AOS>
           </GridItem>
