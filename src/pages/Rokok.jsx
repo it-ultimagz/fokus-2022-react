@@ -116,7 +116,7 @@ const Rokok = () => {
           </Text>
         </AOS>
       </Section>
-      <Section data-key={4} bgColor="var(--fokus-cream)" display="flex" justifyContent="flex-start">
+      <Section data-key={4} bgImage="/articles/napza/assets/image/larangan-merokok/bg-4.png" display="flex" justifyContent="flex-start">
         <AOS fontFamily="National2" py="6rem" w="90%" variants={fadeInUp} delay={0.2} triggerOnce={true} display="flex" justifyContent="flex-start">
           <VStack textAlign="left" alignItems="flex-start" spacing="2rem" fontWeight={300}>
             <Heading color="var(--fokus-blue)" fontFamily="National2" fontWeight="700" fontSize="6xl" pos="relative">
@@ -235,13 +235,13 @@ const Rokok = () => {
       <Section data-key={7} bgImage="/articles/napza/assets/image/larangan-merokok/bg-7.png"></Section>
 
       <Section data-key={8} bgImage="/articles/napza/assets/image/larangan-merokok/bg-8.JPG" alignItems="flex-end" justifyContent="center">
-        <AOS display="flex" variants={fadeInUp} delay={0.8} triggerOnce={true} height="100%" width="100%">
+        <Box display="flex" height="100%" width="100%">
           <Text textAlign="justify" fontSize="md" fontWeight={600} color="white">
             Butuh ketegasan dari pemerintah untuk membuat aturan yang lebih jelas dan tegas untuk mengurangi jumlah perokok yang tinggi. Dengan begitu,
             masyarakat akan memahami konsekuensinya dan tidak mencoba untuk melanggar aturan tersebut. Selain itu, butuh kesadaran seluruh kalangan masyarakat
             bahwa rokok bukan sekadar gaya hidup, melainkan kegiatan berbahaya bagi kesehatan bersama.
           </Text>
-        </AOS>
+        </Box>
       </Section>
     </Box>
   );
