@@ -67,17 +67,38 @@ const RelasiNarkoba = () => {
         </AOS>
       </Box>
       <Section data-key={3} bgImage="/articles/napza/assets/image/relasi-narkoba/bg-2.png" color="var(--fokus-black)" pos="relative">
-        <AOS pos="absolute" top="15rem" left="5%" variants={zoomInRotate} triggerOnce={true} delay={0.4}>
+        <AOS
+          pos="absolute"
+          top={{ base: "20vh", md: "25vh", xl: "30vh" }}
+          left={{ base: "1vw", md: "3vw", xl: "5vw" }}
+          variants={zoomInRotate}
+          triggerOnce={true}
+          delay={0.4}
+        >
           <Image src="/articles/napza/assets/image/relasi-narkoba/asset-3.png" w="80px" />
         </AOS>
-        <AOS pos="absolute" top="8rem" left="36%" variants={zoomInRotate} triggerOnce={true} delay={0.5}>
-          <Image src="/articles/napza/assets/image/relasi-narkoba/asset-3.png" w="120px" />
+        <AOS
+          pos="absolute"
+          top={{ base: "10vh", md: "15vh", xl: "20vh" }}
+          left={{ base: "25vw", md: "30vw", xl: "35vw" }}
+          variants={zoomInRotate}
+          triggerOnce={true}
+          delay={0.5}
+        >
+          <Image src="/articles/napza/assets/image/relasi-narkoba/asset-3.png" w="100px" />
         </AOS>
-        <AOS pos="absolute" bottom="15rem" right="40%" variants={zoomInRotate} triggerOnce={true} delay={0.6}>
+        <AOS
+          pos="absolute"
+          bottom={{ base: "10vh", md: "15vh", xl: "20vh" }}
+          right={{ base: "20vw", md: "25vw", xl: "30vw" }}
+          variants={zoomInRotate}
+          triggerOnce={true}
+          delay={0.6}
+        >
           <Image src="/articles/napza/assets/image/relasi-narkoba/asset-3.png" w="50px" />
         </AOS>
-        <AOS pos="absolute" top="35%" left="30%" variants={zoomIn} triggerOnce={true} delay={1.2}>
-          <Image src="/articles/napza/assets/image/relasi-narkoba/asset-2.png" w="300px" />
+        <AOS pos="absolute" top="35%" left={{ base: "10vw", md: "15vw", xl: "20vw" }} variants={zoomIn} triggerOnce={true} delay={1.2}>
+          <Image src="/articles/napza/assets/image/relasi-narkoba/asset-2.png" w="250px" />
         </AOS>
         <VStack spacing="2.5rem" pl="50%" zIndex={1}>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
@@ -162,7 +183,7 @@ const RelasiNarkoba = () => {
         </VStack>
       </Section>
       <Section data-key={5} bgColor="var(--fokus-white)" color="var(--fokus-black)" justifyContent="flex-start" alignItems="flex-end">
-        <VStack fontFamily="National2" spacing="1.5rem" alignItems="flex-start" mb="12rem">
+        <VStack fontFamily="National2" spacing="1rem" alignItems="flex-start" mb="12rem">
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true} pos="relative">
             <AOS variants={popupBottomRight} delay={1} triggerOnce={true} pos="absolute" right="0" top="-150px">
               <Image src="/articles/napza/assets/image/relasi-narkoba/asset-4.png" w="200px" />
@@ -170,12 +191,12 @@ const RelasiNarkoba = () => {
             <AOS variants={popupBottomLeft} delay={1.2} triggerOnce={true} pos="absolute" right="-300px" top="-50px">
               <Image src="/articles/napza/assets/image/relasi-narkoba/asset-5.png" w="200px" />
             </AOS>
-            <Heading fontSize={{ base: "xl", md: "2xl", xl: "2xl", "2xl": "7xl" }} color="var(--fokus-pink)" fontWeight="800" fontFamily="National2">
+            <Heading fontSize={{ base: "2xl", md: "3xl", xl: "5xl", "2xl": "7xl" }} color="var(--fokus-pink)" fontWeight="800" fontFamily="National2">
               TANGGAPAN
             </Heading>
           </AOS>
           <AOS variants={fadeInUp} delay={0.4} triggerOnce={true}>
-            <Heading fontSize={{ base: "xl", md: "2xl", xl: "2xl", "2xl": "7xl" }} color="var(--fokus-pink)" fontWeight="800" fontFamily="National2">
+            <Heading fontSize={{ base: "2xl", md: "3xl", xl: "5xl", "2xl": "7xl" }} color="var(--fokus-pink)" fontWeight="800" fontFamily="National2">
               GENERASI MUDA
             </Heading>
           </AOS>
@@ -331,11 +352,11 @@ const RelasiNarkoba = () => {
             </GridItem>
           </AOS>
           <GridItem pos="relative" h="100%">
-            <AOS variants={fadeInUp} delay={0.8} triggerOnce={true} pos="absolute" top="0" left="0" h="45%">
-              <Image src="/articles/napza/assets/image/relasi-narkoba/asset-9.png" h="100%" />
+            <AOS variants={fadeInUp} delay={0.8} triggerOnce={true} pos="absolute" top="10%" left="0" h="45%">
+              <Image src="/articles/napza/assets/image/relasi-narkoba/asset-9.png" h={{ base: "50%", md: "60%", xl: "80%" }} />
             </AOS>
-            <AOS variants={fadeInUp} delay={1} triggerOnce={true} pos="absolute" bottom="0" right="0" h="45%">
-              <Image src="/articles/napza/assets/image/relasi-narkoba/asset-8.png" h="100%" />
+            <AOS variants={fadeInUp} delay={1} triggerOnce={true} pos="absolute" bottom="10%" right="0" h="45%">
+              <Image src="/articles/napza/assets/image/relasi-narkoba/asset-8.png" h={{ base: "50%", md: "60%", xl: "80%" }} />
             </AOS>
           </GridItem>
           <AOS variants={fadeInUp} delay={0.6} triggerOnce={true}>
@@ -460,11 +481,11 @@ const RelasiNarkoba = () => {
           </AOS>
           <AOS variants={zoomIn} delay={0.8} triggerOnce={true}>
             <GridItem h="100%" position="relative">
-              <AOS variants={fadeInLeft} delay={0.8} triggerOnce={true} pos="absolute" top="0" left="0" w="45%">
-                <Image src="/articles/napza/assets/image/relasi-narkoba/asset-12.png" w="100%" />
+              <AOS variants={fadeInLeft} delay={0.8} triggerOnce={true} pos="absolute" top="50%" left="0" w="45%">
+                <Image src="/articles/napza/assets/image/relasi-narkoba/asset-12.png" w="100%" transform="translateY(-100%)" />
               </AOS>
-              <AOS variants={fadeInRight} delay={1} triggerOnce={true} pos="absolute" bottom="0" right="0" w="45%">
-                <Image src="/articles/napza/assets/image/relasi-narkoba/asset-13.png" w="100%" />
+              <AOS variants={fadeInRight} delay={1} triggerOnce={true} pos="absolute" bottom="50%" right="0" w="45%">
+                <Image src="/articles/napza/assets/image/relasi-narkoba/asset-13.png" w="100%" transform="translateY(100%)" />
               </AOS>
             </GridItem>
           </AOS>
