@@ -21,9 +21,9 @@ const notesVariants = {
 
 const Landing = () => {
   return (
-    <Section bgImage="/assets/image/landing/bg2.png" position="relative" overflow="hidden" backgroundPosition="revert">
+    <Section bgImage="/articles/napza/assets/image/landing/bg2.png" position="relative" overflow="hidden" backgroundPosition="revert">
       {/* <Image
-            src="/assets/image/landing/papan.png"
+            src="/articles/napza/assets/image/landing/papan.png"
             width="1700px"
             maxWidth="none"
             position="absolute"
@@ -72,12 +72,20 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/1-1.png"
+            src="/articles/napza/assets/image/landing/1-1.png"
           />
 
-          <Image src="/assets/image/landing/1-2.png" width="130px" position="absolute" top="50%" left="50%" transform="translate(135%, -80%)" />
+          <Image src="/articles/napza/assets/image/landing/1-2.png" width="130px" position="absolute" top="50%" left="50%" transform="translate(135%, -80%)" />
 
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(190%, -230%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(190%, -230%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -122,9 +130,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/2.png"
+            src="/articles/napza/assets/image/landing/2.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-120%, -230%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-120%, -230%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -169,9 +185,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/3.png"
+            src="/articles/napza/assets/image/landing/3.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-210%, -230%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-210%, -230%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -216,9 +240,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/4.png"
+            src="/articles/napza/assets/image/landing/4.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(100%, -300%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(100%, -300%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -265,9 +297,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/5.png"
+            src="/articles/napza/assets/image/landing/5.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(280%, -290%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(280%, -290%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -312,9 +352,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/6.png"
+            src="/articles/napza/assets/image/landing/6.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(110%, -60%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(110%, -60%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
 
@@ -329,9 +377,17 @@ const Landing = () => {
             top="50%"
             left="50%"
             transform="translate(-50%, -50%)"
-            src="/assets/image/landing/7.png"
+            src="/articles/napza/assets/image/landing/7.png"
           />
-          <Image src="/assets/image/landing/pin.png" width="50px" position="absolute" top="50%" left="50%" transform="translate(-45%, -140%)" zIndex={3} />
+          <Image
+            src="/articles/napza/assets/image/landing/pin.png"
+            width="50px"
+            position="absolute"
+            top="50%"
+            left="50%"
+            transform="translate(-45%, -140%)"
+            zIndex={3}
+          />
         </Box>
       </AOS>
     </Section>
