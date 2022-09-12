@@ -14,19 +14,19 @@ const Rokok = () => {
       <Section data-key={1} pos="relative" color="var(--fokus-blue)" flexDir="column" bgImage="assets/image/larangan-merokok/bg-1.png">
         <VStack>
           <AOS variants={fadeInUp} delay={0.2} triggerOnce={true}>
-            <Heading fontFamily="National2" fontSize={{ base: "xl", md: "5xl", xl: "6xl", "2xl": "8xl" }} color="var(--fokus-yellow)">
+            <Heading lineHeight="3vw" fontFamily="National2" fontSize={{ base: "xl", md: "6xl", xl: "7xl", "2xl": "9xl" }} color="var(--fokus-yellow)">
               DIL<S>E</S>M<S>A</S> R<S>O</S>
               <S>K</S>
               <S>OK</S>
             </Heading>
           </AOS>
           <AOS variants={fadeInUp} delay={0.4} triggerOnce={true}>
-            <Heading fontFamily="National2" fontSize={{ base: "xl", md: "5xl", xl: "6xl", "2xl": "8xl" }} color="var(--fokus-yellow)">
+            <Heading fontFamily="National2" fontSize={{ base: "xl", md: "6xl", xl: "7xl", "2xl": "9xl" }} color="var(--fokus-yellow)">
               IN<S>DO</S>NE<S>S</S>IA
             </Heading>
           </AOS>
           <AOS textAlign="center" variants={fadeInUp} delay={0.2} triggerOnce={true}>
-            <Heading fontWeight={600} fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }} color="var(--fokus-white)">
+            <Heading mt="-1vw" fontWeight={600} fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }} color="var(--fokus-white)">
               ATURAN TIDAK MENUTUP
             </Heading>
             <Heading fontWeight={600} fontSize={{ base: "xl", md: "2xl", xl: "4xl", "2xl": "5xl" }} color="var(--fokus-white)">
@@ -34,7 +34,7 @@ const Rokok = () => {
             </Heading>
           </AOS>
         </VStack>
-        <AOS triggerOnce={true} variants={fadeInUp} mt="5rem" textAlign="center" fontFamily="National2" fontSize="md" delay={1.2} color="var(--fokus-yellow)">
+        <AOS triggerOnce={true} variants={fadeInUp} mt="1rem" textAlign="center" fontFamily="National2" fontSize="md" delay={1.2} color="var(--fokus-yellow)">
           <Text>
             <b>Penulis:</b>{" "}
             <Box as="span" fontWeight="300" color="var(--fokus-white)">
@@ -49,6 +49,7 @@ const Rokok = () => {
           </Text>
         </AOS>
       </Section>
+      <Section data-key={7} bgImage="/articles/napza/assets/image/larangan-merokok/bg-7.png"></Section>
       <Section
         data-key={2}
         bgImage="/articles/napza/assets/image/larangan-merokok/bg-2.png"
@@ -202,7 +203,7 @@ const Rokok = () => {
         </Box>
       </Section>
       <Section data-key={6} bgImage="/articles/napza/assets/image/larangan-merokok/bg-6.png">
-        <AOS fontFamily="National2" w="40%" variants={fadeInUp} delay={0.2} triggerOnce={true}>
+        <AOS fontFamily="National2" w="60%" variants={fadeInUp} delay={0.2} triggerOnce={true}>
           <VStack paddingTop="40px" textAlign="justify" spacing="2rem" fontWeight={300} color="var(--fokus-black)" fontSize={{ base: "lg", md: "xl" }}>
             <Text>
               Malaysia juga akan memperkenalkan undang-undang baru untuk melarang merokok dan kepemilikan produk tembakau, termasuk alat penguap elektronik,
@@ -220,7 +221,7 @@ const Rokok = () => {
             </Text>
           </VStack>
         </AOS>
-        <Box w="60%" position="relative">
+        <Box w="40%" position="relative">
           <AOS w="550px" left="50%" position="absolute" variants={fade} delay={0.4} triggerOnce={true}>
             <Image src="/articles/napza/assets/image/larangan-merokok/5-1.png" width="100%" transform="translate(-20%, -60%) rotate(7deg)"></Image>
           </AOS>
@@ -232,11 +233,10 @@ const Rokok = () => {
           </AOS>
         </Box>
       </Section>
-      <Section data-key={7} bgImage="/articles/napza/assets/image/larangan-merokok/bg-7.png"></Section>
 
       <Section data-key={8} bgImage="/articles/napza/assets/image/larangan-merokok/bg-8.JPG" alignItems="flex-end" justifyContent="center">
         <Box display="flex" height="100%" width="100%">
-          <Text textAlign="justify" fontSize="md" fontWeight={600} color="white">
+          <Text textAlign="justify" fontSize="md" fontWeight={600} color="white" mb="5vw">
             Butuh ketegasan dari pemerintah untuk membuat aturan yang lebih jelas dan tegas untuk mengurangi jumlah perokok yang tinggi. Dengan begitu,
             masyarakat akan memahami konsekuensinya dan tidak mencoba untuk melanggar aturan tersebut. Selain itu, butuh kesadaran seluruh kalangan masyarakat
             bahwa rokok bukan sekadar gaya hidup, melainkan kegiatan berbahaya bagi kesehatan bersama.
