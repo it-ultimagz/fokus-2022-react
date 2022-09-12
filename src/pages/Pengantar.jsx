@@ -54,7 +54,7 @@ const Pengantar = () => {
               NAPZA erat dengan konotasi <Span>negatif</Span>. Namun, bila digunakan dengan tepat, NAPZA memiliki dampak <Span>positif </Span>
               bagi kesehatan tubuh dan dapat menjadi nilai budaya.
               <br />
-              <b>Jadi, NAPZA itu baik atau buruk</b>
+              <b>Jadi, NAPZA itu baik atau buruk?</b>
             </Text>
           </AOS>
 
@@ -72,7 +72,7 @@ const Pengantar = () => {
             >
               <Image
                 className="arrow-circle"
-                src="/assets/image/landing/arrow.png"
+                src="/articles/napza/assets/image/landing/arrow.png"
                 position="absolute"
                 width="25px"
                 top="25%"

@@ -67,7 +67,7 @@ const AppRouter = () => {
 
   return (
     <Box>
-      <Link to="/">
+      <Link to="/fokus-2022">
         <NavButton pos="fixed" top="3rem" left="3rem" zIndex={10}>
           <Box mr="0.5rem" as="i">
             <AiFillHome mr="1rem" />
