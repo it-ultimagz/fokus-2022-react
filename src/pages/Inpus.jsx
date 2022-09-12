@@ -31,14 +31,14 @@ const Inpus = () => {
             </Text>
           </AOS>
           <AOS variants={fadeInUp} delay={0.4} triggerOnce={true}>
-            <Text fontWeight="bold" fontFamily="National2" fontSize={{ base: "4xl", md: "5xl", xl: "6xl", "2xl": "7xl" }} textAlign="center">
+            <Text mt="-1vw"lineHeight="4vw" fontWeight="bold" fontFamily="National2" fontSize={{ base: "4xl", md: "5xl", xl: "6xl", "2xl": "7xl" }} textAlign="center">
               US<S>A</S>HA G<S>E</S>NER<S>A</S>SI
               <br /> M<S>U</S>DA BEB<S>A</S>S NARK
               <S>O</S>B<S>A</S>
             </Text>
           </AOS>
         </VStack>
-        <AOS triggerOnce={true} variants={fadeInUp} mt="5rem" textAlign="center" fontFamily="National2" fontSize="md" delay={1.2}>
+        <AOS triggerOnce={true} variants={fadeInUp} mt="1rem" textAlign="center" fontFamily="National2" fontSize="md" delay={1.2}>
           <Text>
             <b>Penulis:</b>{" "}
             <Box as="span" fontWeight="300" color="var(--fokus-black)">
@@ -81,7 +81,7 @@ const Inpus = () => {
             </Text>
           </AOS>
           <AOS variants={zoomIn} delay={0.2} triggerOnce={true}>
-            <Image maxW={{ base: "60vw", lg: "35vw" }} src="/articles/napza/assets/image/inpus/Foto3.png" p="5vh" />
+            <Image maxW={{ base: "60vw", lg: "25vw" }} src="/articles/napza/assets/image/inpus/Foto3.png" p="5vh" />
           </AOS>
         </Flex>
       </Section>
@@ -113,10 +113,10 @@ const Inpus = () => {
       <Section bgImage="url('/articles/napza/assets/image/inpus/Inpus7.png')" bgRepeat="no-repeat" bgSize="cover" bgPos="center" minH="100vh" w="100vw">
         <Flex justifyContent="center" verticalAlign="center" alignSelf="center" alignItems="center" flexDirection="column" h="100%" py="4vh">
           <AOS variants={zoomIn} delay={0.2} triggerOnce={true}>
-            <Image maxW="60vw" src="/articles/napza/assets/image/inpus/wawancara.jpg" pb="3vh" />
+            <Image maxW="40vw" src="/articles/napza/assets/image/inpus/wawancara.jpg" pb="3vh" />
           </AOS>
           <AOS fontFamily="National2" variants={fadeInUp} delay={0.2} triggerOnce={true}>
-            <Flex justify="space-around" maxW="60vw" color="var(--fokus-blue)" fontWeight="300" fontSize="lg">
+            <Flex justify="space-around" maxW="55vw" color="var(--fokus-blue)" fontWeight="300" fontSize="lg">
               <Text textAlign="justify">
                 Setiap bulan, ada pula penyuluhan ke empat Sekolah Menengah Atas (SMA) seperti SMA BPK Penabur Gading Serpong dan Regina Pacis Jakarta. Duta
                 Anti Narkoba UMN juga akan melakukan kegiatan ke beberapa SMA lainnya pada bulan Juli. Tidak hanya itu, baru-baru ini, Duta Anti Narkoba UMN
@@ -136,7 +136,7 @@ const Inpus = () => {
       <Section bgColor="#dffe58" minH="100vh" w="100vw" py="4vh">
         <Flex justifyContent="center" verticalAlign="center" alignSelf="center" alignItems="center" flexDirection={{ base: "column", lg: "row" }} maxH="100%">
           <AOS variants={zoomIn} delay={0.2} triggerOnce={true}>
-            <Image maxW={{ base: "60vw", lg: "35vw" }} src="/articles/napza/assets/image/inpus/Foto7.png" p="5vh" />
+            <Image maxW={{ base: "60vw", lg: "25vw" }} src="/articles/napza/assets/image/inpus/Foto7.png" p="5vh" />
           </AOS>
           <AOS fontFamily="National2" variants={fadeInUp} delay={0.2} triggerOnce={true}>
             <Text fontSize={{ base: "lg", md: "xl" }} textAlign="justify" maxW={{ base: "", md: "60vw" }} color="var(--fokus-blue)" fontWeight="300">
